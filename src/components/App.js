@@ -1,14 +1,17 @@
 import React from 'react';
 import SongList from './SongList';
+import SongDetail from './SongDetail';
 
 class App extends React.Component {
   render() {
-    console.log(this.props)
     return (
       <div className="ui container grid">
         <div className="row">
           <div className="column eight wide">
             <SongList />
+          </div>
+          <div className="column eight wide">
+            <SongDetail />
           </div>
         </div>
       </div>
